@@ -1,0 +1,30 @@
+[
+  {
+    "Command": "crouchcancel",
+    "Title": "Crouch cancel",
+    "Description": "A **crouch cancel** (or **CC**) is a technique in the Super Smash Bros. series used to reduce the effect of an attack on the user. By crouching before getting hit by an attack, some aspect of the attack will be weakened.",
+    "ThumbnailUrl": "http://i.imgur.com/nW4CSBj.gif",
+    "Source": "https://www.ssbwiki.com/Crouch_cancel"
+  },
+  {
+    "Command": "fastfall",
+    "Title": "Fast fall",
+    "Description": "A **Fast fall** is the act of falling more quickly than usual in mid-air. It is performed by tapping down on the control stick while falling. The character will continue to fast fall until landing on the platform or taking a hit.",
+    "ThumbnailUrl": "https://www.ssbwiki.com/images/thumb/7/7b/Ff.gif/180px-Ff.gif",
+    "Source": "https://www.ssbwiki.com/Fast_fall"
+  },
+  {
+    "Command": "lcancel",
+    "Title": "Lag-Cancel",
+    "Description": "...",
+    "ThumbnailUrl": "",
+    "Source": ""
+  },
+  {
+    "Command": "wavedash",
+    "Title": "Wavedash",
+    "Description": "A **wavedash** is a technique in Super Smash Bros. Melee that causes a character to slide along the ground without walking or running. It transfers the momentum of the air dodge into a spurt of ground-based movement.",
+    "ThumbnailUrl": "http://vignette1.wikia.nocookie.net/ssb/images/3/37/Wd2.gif",
+    "Source": "http://supersmashbros.wikia.com/wiki/Wavedash"
+  }
+]
