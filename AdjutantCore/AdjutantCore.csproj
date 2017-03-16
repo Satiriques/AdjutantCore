@@ -7,8 +7,8 @@
 
   <ItemGroup>
     <PackageReference Include="Discord.Addons.InteractiveCommands" Version="1.2.1" />
-    <PackageReference Include="Discord.Net.Commands" Version="1.0.0-rc-00622" />
-    <PackageReference Include="Discord.Net.WebSocket" Version="1.0.0-rc-00622" />
+    <PackageReference Include="Discord.Net.Commands" Version="1.0.0-rc-00623" />
+    <PackageReference Include="Discord.Net.WebSocket" Version="1.0.0-rc-00623" />
   </ItemGroup>
 
 </Project>
