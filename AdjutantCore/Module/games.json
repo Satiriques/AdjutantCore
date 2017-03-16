@@ -16,9 +16,16 @@
   {
     "Command": "lcancel",
     "Title": "Lag-Cancel",
-    "Description": "...",
-    "ThumbnailUrl": "",
-    "Source": ""
+    "Description": "**L-canceling** (an abbreviation of **lag canceling** or **L button canceling**, also called **smooth landing** on the official Super Smash Bros. website) is a technique in Super Smash Bros. and Super Smash Bros. Melee that allows characters to act faster than usual when landing in the middle of an aerial attack.",
+    "ThumbnailUrl": "https://www.ssbwiki.com/images/thumb/9/94/Lcancelink.gif/180px-Lcancelink.gif",
+    "Source": "https://www.ssbwiki.com/L-canceling"
+  },
+  {
+    "Command": "max",
+    "Title": "Maxime Caron",
+    "Description": "The \"**Maxime Caron**\" also called \"**Blender**\" or \"**EZ MONI**\" is when Maxime Caron uses peach's down smash.",
+    "ThumbnailUrl": "http://vignette2.wikia.nocookie.net/ssb/images/1/14/180px-PeachDownSmashSSBM.gif",
+    "Source": "http://niceme.me"
   },
   {
     "Command": "wavedash",

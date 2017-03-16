@@ -33,7 +33,7 @@ namespace AdjutantCore.Discord
                 {
                     var result = await cmd.CheckPreconditionsAsync(Context);
                     if (result.IsSuccess)
-                        description += $"{"!"}{cmd.Aliases.First()}\n";
+                        description += $"{"?"}{cmd.Aliases.First()}\n";
                 }
 
                 if (!string.IsNullOrWhiteSpace(description))

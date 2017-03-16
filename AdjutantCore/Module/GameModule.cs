@@ -12,6 +12,7 @@ using System.Linq;
 
 namespace AdjutantCore.Module
 {
+    [Group("smash")]
     public class GameModule : InteractiveModuleBase
     {
         List<GameJson> Queries;
@@ -22,8 +23,8 @@ namespace AdjutantCore.Module
             Queries = JsonConvert.DeserializeObject<List<GameJson>>(File.ReadAllText(FilePath));
 
         }
-
-        [Command("smash")]
+        
+        [Command("")]
         public async Task Smash(string query)
         {
             var cmd = Queries.Where(x => x.Command == query).FirstOrDefault();
@@ -43,6 +44,12 @@ namespace AdjutantCore.Module
             {
                 await ReplyAsync("Cmd not found");
             }
+        }
+
+        [Command("listqueries")]
+        public async Task ListQueries()
+        {
+            await ReplyAsync(Format.Code(String.Join(", ", Queries.Select(x => x.Command))));
         }
             
         [Command("addquery",RunMode=RunMode.Async)]
@@ -82,14 +89,15 @@ namespace AdjutantCore.Module
                 File.WriteAllText(FilePath, JsonConvert.SerializeObject(Queries.OrderBy(x => x.Title),Formatting.Indented));
 
 
-				
-				//visualisation
-				var emb = new EmbedBuilder()
-				{
-					Title = title.Content,
-					Description = desc.Content,
-					ImageUrl = img.Content,
-					Url = src.Content
+
+                //visualisation
+                var emb = new EmbedBuilder()
+                {
+                    Title = title.Content,
+                    Description = desc.Content,
+                    ImageUrl = img.Content,
+                    Url = src.Content,
+                    Color = new Color(255, 255, 255)
 				};
 
 				await ReplyAsync("", false, emb);
