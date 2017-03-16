@@ -18,6 +18,7 @@ namespace DiscordExampleBot
 
         public async Task Start()
         {
+            Console.WriteLine("start");
             // Define the DiscordSocketClient
             client = new DiscordSocketClient();
 
@@ -25,7 +26,7 @@ namespace DiscordExampleBot
 
             client.Connected += async () =>
             {
-                await client.SetGameAsync("!help");
+                await client.SetGameAsync("?help");
             };
 
             // Login and connect to Discord.
@@ -37,9 +38,10 @@ namespace DiscordExampleBot
 
             handler = new CommandHandler();
             await handler.Install(map);
-
+            Console.WriteLine("Connected");
             // Block this program until it is closed.
             await Task.Delay(-1);
+           
         }
 
         private Task Log(LogMessage msg)
